@@ -64,7 +64,7 @@ class HomeVm extends ChangeNotifier {
 
     _merchants = [
       Merchant(name: "Justrite", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Orile Restaurant", isActive: true, assetLogo: Assets.svgs.orile),
+      Merchant(name: "Orile Restaurant", isActive: true, assetLogo: Assets.svgs.merchantTwo),
       Merchant(name: "Slot", isActive: true, assetLogo: Assets.svgs.slot),
       Merchant(name: "Pointek", isActive: true, assetLogo: Assets.svgs.merchantTwo),
       Merchant(name: "ogabassey", isActive: true, assetLogo: Assets.svgs.ogaBassey),

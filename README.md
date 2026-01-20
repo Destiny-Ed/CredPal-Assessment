@@ -29,9 +29,10 @@ Make sure you already have [Flutter](https://flutter.dev) installed
    - iOS: `flutter run` (on macOS) system only
 
 ## Screenshots
-(Home Screen)[]
 
-(Merchat Session) []
+!(Home Screen)[../screenshots/home.png]
+
+(Merchant Session) [../screenshots/merchant.png]
 
 (Products Session) []
 
