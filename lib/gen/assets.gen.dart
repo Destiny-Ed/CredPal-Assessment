@@ -36,6 +36,9 @@ class $AssetsPngsGen {
 class $AssetsSvgsGen {
   const $AssetsSvgsGen();
 
+  /// File path: assets/svgs/dreamworks.svg
+  String get dreamworks => 'assets/svgs/dreamworks.svg';
+
   /// File path: assets/svgs/hub.svg
   String get hub => 'assets/svgs/hub.svg';
 
@@ -63,11 +66,15 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/search-normal.svg
   String get searchNormal => 'assets/svgs/search-normal.svg';
 
+  /// File path: assets/svgs/slot.svg
+  String get slot => 'assets/svgs/slot.svg';
+
   /// File path: assets/svgs/warning.svg
   String get warning => 'assets/svgs/warning.svg';
 
   /// List of all assets
   List<String> get values => [
+    dreamworks,
     hub,
     mate,
     merchantOne,
@@ -77,6 +84,7 @@ class $AssetsSvgsGen {
     orile,
     scan,
     searchNormal,
+    slot,
     warning,
   ];
 }

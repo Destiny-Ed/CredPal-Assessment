@@ -55,17 +55,16 @@ class HomeVm extends ChangeNotifier {
     ];
 
     _merchants = [
-      Merchant(name: "Justrite", isActive: true, assetLogo: Assets.svgs.merchantOne),
-      Merchant(name: "Oriile", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Slot", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Pointek", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "ogabassey", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Casper", isActive: false, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Dreamworks", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Hubmart", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Just Used", isActive: true, assetLogo: Assets.svgs.merchantTwo),
-      Merchant(name: "Just Fones", isActive: true, assetLogo: Assets.svgs.merchantTwo),
       Merchant(name: "Justrite", isActive: true, assetLogo: Assets.svgs.merchantTwo),
+      Merchant(name: "Orile Restaurant", isActive: true, assetLogo: Assets.svgs.orile),
+      Merchant(name: "Slot", isActive: true, assetLogo: Assets.svgs.slot),
+      Merchant(name: "Pointek", isActive: true, assetLogo: Assets.svgs.merchantTwo),
+      Merchant(name: "ogabassey", isActive: true, assetLogo: Assets.svgs.ogaBassey),
+      Merchant(name: "Casper Stores", isActive: false, assetLogo: Assets.svgs.slot),
+      Merchant(name: "Dreamworks", isActive: false, assetLogo: Assets.svgs.dreamworks),
+      Merchant(name: "Hubmart", isActive: true, assetLogo: Assets.svgs.hub),
+      Merchant(name: "Just Used", isActive: true, assetLogo: Assets.svgs.merchantOne),
+      Merchant(name: "Just Fones", isActive: true, assetLogo: Assets.svgs.slot),
     ];
 
     notifyListeners();
