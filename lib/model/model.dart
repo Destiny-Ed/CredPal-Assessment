@@ -1,11 +1,10 @@
-import 'dart:ui';
-
 class Product {
   final String title;
   final String currentPrice;
   final String oldPrice;
   final String? discount;
   final String imageAsset;
+  final String productImage;
 
   Product({
     required this.title,
@@ -13,6 +12,7 @@ class Product {
     required this.oldPrice,
     this.discount,
     required this.imageAsset,
+    required this.productImage,
   });
 }
 

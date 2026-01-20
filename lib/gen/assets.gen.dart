@@ -11,26 +11,23 @@
 
 import 'package:flutter/widgets.dart';
 
-class $AssetsPngsGen {
-  const $AssetsPngsGen();
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
 
-  /// File path: assets/pngs/phone_one.png
+  /// File path: assets/images/phone_one.jpg
   AssetGenImage get phoneOne =>
-      const AssetGenImage('assets/pngs/phone_one.png');
+      const AssetGenImage('assets/images/phone_one.jpg');
 
-  /// File path: assets/pngs/phone_two.png
+  /// File path: assets/images/phone_two.jpg
   AssetGenImage get phoneTwo =>
-      const AssetGenImage('assets/pngs/phone_two.png');
+      const AssetGenImage('assets/images/phone_two.jpg');
 
-  /// File path: assets/pngs/product_three.png
+  /// File path: assets/images/product_three.jpg
   AssetGenImage get productThree =>
-      const AssetGenImage('assets/pngs/product_three.png');
-
-  /// File path: assets/pngs/slot.png
-  AssetGenImage get slot => const AssetGenImage('assets/pngs/slot.png');
+      const AssetGenImage('assets/images/product_three.jpg');
 
   /// List of all assets
-  List<AssetGenImage> get values => [phoneOne, phoneTwo, productThree, slot];
+  List<AssetGenImage> get values => [phoneOne, phoneTwo, productThree];
 }
 
 class $AssetsSvgsGen {
@@ -92,7 +89,7 @@ class $AssetsSvgsGen {
 class Assets {
   const Assets._();
 
-  static const $AssetsPngsGen pngs = $AssetsPngsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsSvgsGen svgs = $AssetsSvgsGen();
 }
 

@@ -15,61 +15,106 @@ class ProductCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 6),
       child: Card(
-        elevation: 1.5,
+        elevation: 1,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         color: AppColors.bgWhiteColor,
-        child: SizedBox(
-          width: 165,
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          height: 174,
+          width: 161,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (hasDiscount)
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade700,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    product.discount!,
-                    style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w600),
-                  ),
-                ),
-              Expanded(
-                child: Center(
-                  child: Image.asset(
-                    product.imageAsset,
-                    fit: BoxFit.contain,
-                    errorBuilder: (_, __, ___) =>
-                        const Icon(Icons.phone_android, size: 90, color: Colors.grey),
-                  ),
+              SizedBox(
+                height: 96,
+                width: double.infinity,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      child: Container(
+                        height: 96,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(image: AssetImage(product.productImage)),
+                        ),
+                      ),
+                    ),
+
+                    Positioned(
+                      left: 10,
+                      child: Card(
+                        color: AppColors.bgWhiteColor,
+                        shape: CircleBorder(),
+                        child: CircleAvatar(
+                          radius: 28,
+                          backgroundColor: AppColors.bgWhiteColor,
+                          child: !hasDiscount
+                              ? SvgPicture.asset(product.imageAsset, fit: BoxFit.cover)
+                              : Padding(
+                                  padding: const EdgeInsets.all(5.0),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        "Pay",
+                                        style: TextStyle(
+                                          color: AppColors.grayColor,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      Text(
+                                        "40%",
+                                        style: TextStyle(
+                                          color: AppColors.blueColor,
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(12),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       product.title,
-                      maxLines: 2,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 14,
+                        color: AppColors.blackColor,
+                      ),
                     ),
                     const SizedBox(height: 6),
-                    Text(
-                      product.currentPrice,
-                      style: TextStyle(color: AppColors.blueColor, fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      product.oldPrice,
-                      style: TextStyle(
-                        color: AppColors.grayColor,
-                        decoration: TextDecoration.lineThrough,
-                        fontSize: 13,
-                      ),
+                    Row(
+                      spacing: 8,
+                      children: [
+                        Text(
+                          product.currentPrice,
+                          style: TextStyle(
+                            color: AppColors.blueColor,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          product.oldPrice,
+                          style: TextStyle(
+                            color: AppColors.grayColor,
+                            decoration: TextDecoration.lineThrough,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
