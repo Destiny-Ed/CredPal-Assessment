@@ -30,8 +30,8 @@ Make sure you already have [Flutter](https://flutter.dev) installed
 
 ## Screenshots
 
-!(alt text)[https://github.com/Destiny-Ed/CredPal-Assessment/blob/main/screenshots/home.png]
+![alt text](https://github.com/Destiny-Ed/CredPal-Assessment/blob/main/screenshots/home.png)
 
-!(alt text)[https://github.com/Destiny-Ed/CredPal-Assessment/blob/main/screenshots/merchant.png]
+![alt text](https://github.com/Destiny-Ed/CredPal-Assessment/blob/main/screenshots/merchant.png)
 
 
