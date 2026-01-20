@@ -26,8 +26,11 @@ class $AssetsPngsGen {
   AssetGenImage get productThree =>
       const AssetGenImage('assets/pngs/product_three.png');
 
+  /// File path: assets/pngs/slot.png
+  AssetGenImage get slot => const AssetGenImage('assets/pngs/slot.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [phoneOne, phoneTwo, productThree];
+  List<AssetGenImage> get values => [phoneOne, phoneTwo, productThree, slot];
 }
 
 class $AssetsSvgsGen {
@@ -60,14 +63,11 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/search-normal.svg
   String get searchNormal => 'assets/svgs/search-normal.svg';
 
-  /// File path: assets/svgs/slot.png
-  AssetGenImage get slot => const AssetGenImage('assets/svgs/slot.png');
-
   /// File path: assets/svgs/warning.svg
   String get warning => 'assets/svgs/warning.svg';
 
   /// List of all assets
-  List<dynamic> get values => [
+  List<String> get values => [
     hub,
     mate,
     merchantOne,
@@ -77,7 +77,6 @@ class $AssetsSvgsGen {
     orile,
     scan,
     searchNormal,
-    slot,
     warning,
   ];
 }

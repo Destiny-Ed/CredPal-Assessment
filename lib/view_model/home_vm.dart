@@ -40,6 +40,18 @@ class HomeVm extends ChangeNotifier {
         oldPrice: "₦515,000",
         imageAsset: Assets.pngs.phoneOne.path,
       ),
+      Product(
+        title: "Anker Soundcore...",
+        currentPrice: "₦39,780",
+        oldPrice: "₦88,000",
+        imageAsset: Assets.pngs.productThree.path,
+      ),
+      Product(
+        title: "iPhone 12 Pro",
+        currentPrice: "₦490,500",
+        oldPrice: "₦515,000",
+        imageAsset: Assets.pngs.phoneOne.path,
+      ),
     ];
 
     _merchants = [
