@@ -2,6 +2,7 @@ import 'package:credpal_assessment/gen/assets.gen.dart';
 import 'package:credpal_assessment/theme/colors.dart';
 import 'package:credpal_assessment/view_model/home_vm.dart';
 import 'package:credpal_assessment/widgets/home_widgets.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
@@ -225,11 +226,12 @@ class HomeScreen extends StatelessWidget {
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
-            childAspectRatio: 0.78,
+            childAspectRatio: MediaQuery.of(context).size.width > 850 ? 2.5 : 0.78,
+            // childAspectRatio: 0.78,
           ),
           itemCount: provider.merchants.length,
           itemBuilder: (context, index) {
